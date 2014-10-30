@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Tabs</title>
+  <link rel="stylesheet" href="css\ui-lightness\jquery-ui-1.10.4.css">
+  <script src="jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery-ui-1.10.4.custom.js"></script>
+  <link rel="demos.css">
+  <script src="script.js"></script>
+  <style>
+ .deletedata
+{
+position:absolute;
+top:65px;
+left:50px;
+}
+ </style>
+ </head>
+ <body>
+ 
+ <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Enter Details</a></li>
+    <li><a href="#tabs-2">Saved Data</a></li>
+    <li><a href="#tabs-3">Deleted Data</a></li>
+  </ul>
+    <div id="tabs-1">
+   <form>
+ <fieldset>
+ <legend>Fill your details</legend>
+First Name: <input type="text" class="hi" id="fname"><br><br>
+Last Name: <input type="text" class="hi" id="lname"><br><br>
+Address: <input type="text" class="hi" id="add"><br><br>
+Phone no:<input type="text" class="hi" id="pno"><br><br>
+ <input type="submit" value="submit" id="submit">
+ </fieldset>
+ </form>
+ </div>
+    <div id="tabs-2">
+    <table class="tab" cellspacing="30">
+ <tr>
+  <td><input type="checkbox" class="main"></td>
+  <td class="del" id="dfname">Firstname</td>
+  <td class="del" id="dlname">Lastname</td>		
+  <td class="del" id="dadd">Address</td>
+  <td class="del" id="dpno">Phone no</td>
+ </tr>
+ </table>
+ <input type="button" class="deletedata" value="Delete" id="delete">
+ </div>
+   <div id="tabs-3">
+  <table class="table1" cellspacing="30">
+ <tr>
+   <td></td>
+   <td>Firstname</td>
+   <td>Lastname</td>		
+   <td>Address</td>
+   <td>Phone no</td>
+</tr>
+  </table>
+  </div>
+  </div>
+ </body>
+ </html>
